@@ -1,0 +1,242 @@
+:root{
+    --gradient1: #abe9b3;
+    --gradient2: #abe9b3;
+    --gradient3: #abe9b3;
+    --gradient4: #fae3b0;
+    --gradient5: #f28fad;
+    --gradient6: #f28fad;
+    --gradient7: #f28fad;
+}
+
+* {
+    font-size: 12px;
+    color: #bec8e7;
+    font-weight: 500;
+    font-family: "JetBrainsMono Nerd Font Mono";
+    margin: 0;
+    padding: 0;
+}
+.yasb-bar {
+    padding: 0;
+    margin: 0;
+}
+.widget {
+    padding: 0 8px;
+    margin: 0 4px;
+    border-radius: 6px;
+}
+.widget .icon {
+    font-size: 18px;
+}
+.win-btn {
+    background-color: var(--gradient1);
+}
+.win-btn .icon {
+    color: #142123;
+}
+.komorebi-workspaces {
+    background-color: #221f2e;
+}
+.komorebi-workspaces .offline-status {
+    color: #627199;
+    font-size: 12px;
+    padding: 0 4px;
+    font-weight: 600;
+}
+.komorebi-workspaces .ws-btn {
+    border: none;
+    background-color: #d4d4d4;
+    margin: 0px 4px;
+    padding: 0;
+    color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+}
+.komorebi-workspaces .ws-btn:hover {
+    background-color: var(--gradient2);
+}
+.komorebi-workspaces .ws-btn.populated {
+    background-color: var(--gradient2);
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: rgba(149, 177, 255, 0);
+    background-color: var(--gradient2);
+    width: 36px;
+    height: 10px;
+    border-radius: 5px;
+}
+.traffic-widget {
+    background-color: var(--gradient3);
+    padding: 0;
+}
+.traffic-widget .icon {
+    color: #142123;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.traffic-widget .label {
+    background-color: #221f2e;
+    margin: 1px;
+    border-radius: 6px;
+    padding: 0 6px;
+    color: var(--gradient3);
+}
+
+.clock-widget {
+    background-color: var(--gradient7);
+    padding: 0;
+}
+.clock-widget .icon {
+    color: #142123;
+    padding: 0 6px;
+}
+.clock-widget .label {
+    background-color: #221f2e;
+    color: var(--gradient7);
+    padding: 0 6px;
+    margin: 1px;
+    border-radius: 6px;
+}
+.volume-widget {
+    background-color: var(--gradient6);
+    padding: 0;
+}
+.volume-widget .icon {
+    color: #142123;
+    padding: 0 6px;
+}
+.volume-widget .label {
+    background-color: #221f2e;
+    color: var(--gradient6);
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: 6px;
+}
+.weather-widget {
+    background-color: #9ecfd7;
+    padding: 0;
+}
+.weather-widget .icon {
+    color: #142123;
+    padding: 0 6px;
+}
+.weather-widget .label {
+    background-color: #221f2e;
+    color: #9ecfd7;
+    padding: 0 6px;
+    margin: 1px;
+    border-radius: 6px;
+}
+
+.power-menu-widget {
+    background-color: var(--gradient7);
+    padding: 0;
+}
+
+.power-menu-widget .label {
+    color: #142123;
+    padding: 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.language-widget {
+    background-color: var(--gradient5);
+    padding: 0;
+}
+.language-widget .icon {
+    color: #142123;
+    padding: 0 6px;
+}
+.language-widget .label {
+    background-color: #221f2e;
+    color: var(--gradient5);
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: 6px;
+}
+.taskbar-widget {
+    background-color: #221f2e;
+    padding: 0;
+}
+.taskbar-widget .app-icon {
+    padding: 0 8px;
+    border: none;
+    margin: 0;
+}
+.active-window-widget {
+    background-color: var(--gradient4);
+    padding: 0;
+}
+.active-window-widget .label {
+    color: var(--gradient4);
+    background-color: #221f2e;
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: 6px;
+}
+.active-window-widget .icon {
+    padding: 0 8px;
+    border: none;
+    margin: 0;
+    background-color: var(--gradient4);
+}
+
+/*POWER MENU POPUP*/
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(191, 202, 219, 0.726);
+    font-weight: 600;
+}
+.power-menu-popup {
+    background-color: rgba(24, 24, 37, 0);
+    border-radius: 12px;
+
+}
+.power-menu-popup .button {
+    padding: 0;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: #1e1e2e;
+    color: #f28fad;
+    border: 8px solid #1e1e2e;
+    margin: 0px;
+}
+.power-menu-popup .button.hover {
+    background-color: #1e1e1e;
+    border: 8px solid #1e1e1e;
+}
+.power-menu-popup .button .label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f28fad;
+
+}
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 32px;
+    color: #f28fad;
+}
+.power-menu-popup .button.cancel .icon {
+    padding: 0;
+    margin: 0;
+}
+.power-menu-popup .button.cancel .label {
+    margin: 0;
+    color: #abe9b3;
+}
+
+.power-menu-popup .button.cancel {
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1e1e2e;
+}
+.power-menu-popup .button.cancel:hover {
+    background-color: #1e1e1e;
+}
