@@ -19,3 +19,6 @@ export nnUNet_preprocessed=$BASE_PATH/nnUNet_preprocessed
 export nnUNet_results=$BASE_PATH/nnUNet_results
 
 . "$HOME/.local/bin/env"
+
+# Launch starship terminal prompt
+eval "$(starship init bash)"
