@@ -10,7 +10,7 @@
 @define-color color6 #2D7BA5;
 @define-color color7 #c6c6c8;
 @define-color color8 #626878;
-@define-color color9 #2D607F;
+@define-color color9 #00AAFF;
 @define-color color10 #2D6180;
 @define-color color11 #2D6687;
 @define-color color12 #2D688A;
@@ -84,18 +84,18 @@ tooltip {
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
 }
-#workspaces button.active {
+#workspaces button.focused {
     color: @color9;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 #workspaces button.empty {
-    color: rgba(0,0,0,0);
+    color: @color9;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
 #workspaces button.empty:hover {
-    color: rgba(0,0,0,0);
+    color: @color9;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
