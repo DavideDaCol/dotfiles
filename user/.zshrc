@@ -153,7 +153,7 @@ function paste-file() {
 
 ls() # ls with preferred arguments
 {
-	command ls --color=auto -F1 "$@"
+	command lsd --color=auto -F1 "$@"
 }
 
 #cd() # cd and ls after
@@ -314,7 +314,5 @@ bindkey '^H' backward-kill-word
 # initialize completion
 compinit -u -d "$compfile"
 
-
-# initialize prompt with a decent built-in theme
-promptinit
-prompt adam1
+# add starship! make it pretty
+eval "$(starship init zsh)"
