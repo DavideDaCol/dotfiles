@@ -1,0 +1,58 @@
+@define-color foreground #eeeeee;
+@define-color foreground-highlight #00AAFF;
+@define-color foreground-inactive #aaaaaa;
+@define-color background #000000;
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces {
+    /*
+    ideally this should be matches to your
+    TWM's outer gaps
+    */
+    padding-left: 10px;
+}
+
+#workspaces button.active {
+    color: @foreground-highlight;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}
+
+#workspaces button {
+    color: @foreground;
+    padding: 0 0.35rem;
+}
+
+#memory,
+#custom-platform-profile {
+    padding-left: 1em
+}
+
+
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#language,
+#network,
+#bluetooth,
+#custom-powermenu,
+#tray {
+    padding: 0 10px; 
+}
+
+.modules-right {
+    padding-right: 10px;
+}
