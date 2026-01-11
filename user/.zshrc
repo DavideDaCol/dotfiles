@@ -151,6 +151,15 @@ function paste-file() {
   curl -F 'file=@-' 0x0.st < "$1"
 }
 
+# yazi fn to cd into a directory when you quit
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 ls() # ls with preferred arguments
 {
 	command lsd --color=auto -F1 "$@"
