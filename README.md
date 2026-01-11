@@ -13,7 +13,11 @@ _These are my personal dotfiles, based on Arch and SwayFX_
 installation is handled via **GNU Stow**.
 To install _user-level_ dotfiles run this in the repo root directory:
 ```bash
-stow user
+# desktop dotfiles
+stow desktop
+
+# laptop dotfiles (Microsoft Surface Pro 8)
+stow laptop
 ```
 
 To install _system-level_ dotfiles (***watch out!***):
@@ -22,9 +26,24 @@ sudo stow -t \ system
 ```
 
 ## Dependencies
+### Desktop
 | Service         | Program  |
 |----------------:|:---------|
 | Window Manager  | SwayFX   |
+| Status Bar      | Waybar   |
+| Terminal        | Ghostty  |
+| Shell           | Zsh      |
+| Prompt          | Starship |
+| App menu        | Fuzzel   |
+| Lock Menu       | Swaylock |
+| Display Manager | Ly       |
+
+### Laptop
+
+| Service         | Program  |
+|----------------:|:---------|
+| Window Manager  | Hyprland |
+| Background util | hyprpaper|
 | Status Bar      | Waybar   |
 | Terminal        | Ghostty  |
 | Shell           | Zsh      |
