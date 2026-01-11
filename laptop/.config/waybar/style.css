@@ -41,6 +41,18 @@
     padding-left: 1em
 }
 
+#battery.critical {
+    color: #b30b0b
+}
+
+#battery.warning {
+    color: #e4d208
+}
+
+#battery.charging {
+    color: #84e484
+}
+
 
 #wireplumber,
 #battery,
