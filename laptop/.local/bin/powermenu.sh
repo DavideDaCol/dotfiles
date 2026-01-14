@@ -26,7 +26,7 @@ case $chosen in
         systemctl reboot
         ;;
     "$suspend")
-        hyprlock & systemctl sleep
+        hyprlock & sleep 0.5; systemctl sleep
         ;;
     "$log_out")
         swaymsg exit
