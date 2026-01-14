@@ -17,7 +17,7 @@ rofi_command="fuzzel -d -w 14 -l $((lines+1))"
 chosen="$(echo -e "$options" | $rofi_command )"
 case $chosen in
     "$lock_screen")
-	swaylock
+	    swaylock
         ;;    
     "$power_off")
         shutdown now
@@ -26,7 +26,7 @@ case $chosen in
         systemctl reboot
         ;;
     "$suspend")
-        systemctl sleep
+        swaylock & systemctl sleep
         ;;
     "$log_out")
         swaymsg exit
